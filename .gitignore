@@ -39,7 +39,4 @@ venv
 app.db
 microblog.log*
 
-downloads/*
-!downloads
-
 .idea
