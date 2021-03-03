@@ -1,0 +1,494 @@
+a {
+  color: #337ab7;
+}
+
+a:hover {
+  color:#23527c;
+}
+a:visited {
+  color: #8d75a3;
+}
+
+.centered {
+  position: absolute;
+  top: 8%;
+  /*left: 40%;
+  transform: translate(-45%, -45%);*/
+  width: 100%;
+}
+
+.items svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.items:nth-child(-n+2){
+  border-right: solid #c9ccd1 2px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+#container:hover > #img1 {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+
+#container:hover + #speak {
+  outline: none;
+  background: rgb(33, 142, 214);
+}
+
+body {
+	line-height: 1.5;
+	font-family: sans-serif;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color:black;
+	margin:2em;
+}
+
+h1 {
+	/*text-decoration: underline red;*/
+	text-decoration-thickness: 3px;
+	text-underline-offset: 6px;
+	font-size: 220%;
+	font-weight: bold;
+}
+
+h2 {
+	font-weight: bold;
+	color: #005A9C;
+	font-size: 140%;
+	text-transform: uppercase;
+}
+
+#controls {
+  display: flex;
+  margin-top: 2rem;
+  max-width: 28em;
+} 
+
+#sous{
+  font-size: medium;
+  text-align: right;
+
+}
+
+button {
+  flex-grow: 1;
+  border-radius: 0.15rem;
+  border: none;
+  /* box-shadow: inset 0 -0.15rem 0 rgb(214, 10, 170); */
+  cursor: pointer;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
+}
+
+
+.circle-icon1 {
+  background: #ffffff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+.back {
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+}
+
+/* 
+  Profile and github button
+*/
+
+.basic{
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Github */
+#github:hover{
+  background-color: #181818;
+}
+
+#github:hover i, #github:hover p{
+  color: #ffffff;
+}
+
+#github i{
+  margin-right: 5px;
+}
+
+#github p{
+  margin-top: 20px;
+  color: #414141;
+}
+
+#github{
+  border: 1px solid rgb(104, 104, 104);
+  outline: none;
+}
+
+/* profile */
+
+#profile{
+  background-color: rgb(33, 142, 214);
+  outline: none;
+}
+
+#profile i{
+  color: white;
+  margin-right: 5px;
+}
+
+#profile p{
+  color: white;
+  margin-top: 20px;
+}
+
+#profile:hover{
+  background-color: #0566e4;
+}
+
+
+/* 
+Record button 
+*/
+
+/* Round the button and put colorful shadow */ 
+.circle-icon {
+  background: #ffffff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  box-shadow: 5px 5px 25px 1px #eb4ce3, -7px -5px 25px 1px  #2fa0eb , 
+  -1px -1px 25px 1px rgb(250, 250, 250);
+  border-color:transparent ;
+  outline: none;
+}
+
+#record_Button{
+  color:#ffffff;
+}
+
+#record_Button:hover{
+  outline: none;
+  background: rgb(33, 142, 214);
+  box-shadow: 5px 5px 35px 3px #eb4ce3, -7px -5px 35px 3px  #2fa0eb , 
+  -1px -1px 35px 3px rgb(250, 250, 250);
+}
+
+#record_Button:hover i{
+  color:#ffffff;
+}
+
+#record_Button:focus {
+  border-color:transparent;
+  outline: none;
+}
+
+.circle_con {
+  color: #337ab7;
+}
+
+/* additional hover effect */
+#speak:hover + #img1 {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+
+.button.play {
+  box-sizing: border-box;
+  height: 25px;
+  width: 25px;
+  border-width: 17px 0px 17px 25px;
+  border-style: solid;
+  border-color: transparent transparent transparent #202020;
+  background-color: #ffffff;
+}
+
+.button.pause {
+  width: 25px;
+  height: 25px;
+  border-style: double;
+  border-width: 0px 0px 0px 25px;
+  border-color: #202020;
+  background-color: #ffffff;
+}
+
+#but{
+  transition: .2s all ease-in-out;
+}
+
+.play {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 25px;
+
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 17px 0 17px 25px;
+}
+
+.paused{
+  border-style: double;
+  border-width: 0px 0 0px 25px;
+}
+
+.play:hover, .paused:hover {
+  border-color: transparent transparent transparent #ce2727;
+}
+
+/* Button  yes no*/
+#first-container :hover{
+  color: #1ea84c;
+
+}
+#second-container :hover{
+  color: #a8231e;
+}
+
+/*button1::-moz-focus-inner {
+  border: 0;
+}
+
+button1:active {
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3rem;
+}
+
+button1:disabled {
+  pointer-events: none;
+  background: lightgray;
+}
+button1:first-child {
+  margin-left: 0;
+}*/
+
+audio {
+  display: block;
+  width: 100%;
+  margin-top: 0.2rem;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+#formats {
+  margin-top: 0.5rem;
+  font-size: 80%;
+}
+
+#recordingsList{
+	max-width: 28em;
+}
+
+
+
+.pricing-header {
+  max-width: 700px;
+}
+
+html{
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+#stp{
+  justify-content: left;
+}
+
+.section{height: 100vh;}
+
+/*.bottom {
+  background-color: rgb(206, 204, 204);
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  margin-right: 10px;
+  padding-top: 0px;
+}*/
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.bottom {
+  background-color: rgb(206, 204, 204);
+  position: absolute;
+  bottom: 1px;
+  width: 97%;
+}
+
+#down1{
+  text-align: right;
+  margin-right: 10px;
+  padding-top: 30px;
+}
+
+#down2{
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 30px;
+}
+
+.btn_{
+  width: 200px;
+}
+
+.background_img {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  background-image: url(wave1.png), opacity(0.7);
+}
+
+.background_img img{
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+} 
+
+.background_img img:hover{
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+/*Sound waves*/
+#bars {
+  height: 30px;
+  right: 5%;
+  margin: -30px 0 0 -20px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+}
+
+#bars {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+}
+
+#bars.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+}
+
+
+.bar {
+ background: #E20074;
+  bottom: 1px;
+  height: 3px;
+  position: absolute;
+  width: 3px;      
+  animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+  0% {
+     opacity: .35;
+      height: 3px; 
+  }
+  100% {
+      opacity: 1;       
+      height: 28px;        
+  }
+}
+
+.bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
+.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }
+
+/*Notes*/
+p{
+  font-family:sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#short_note{
+  font-size: 1rem;
+}
+
+/*Progress bar*/
+.progress{
+  margin: 4px;
+  float:left;
+  text-align: center;
+  height: 80px;
+  position: absolute;
+  top: 15px;
+}
+
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden; /* Comment this line to understand the trick */
+  width: 90px; height: 45px; /* Half circle (overflow) */
+  margin-bottom: -14px; /* bring the numbers up */
+}
+
+.slide_bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 90px; height: 90px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid rgb(209, 209, 209);   /* half gray, */
+  border-bottom-color: #2fa0eb;  /* half azure */
+  border-right-color: #2fa0eb;
+}

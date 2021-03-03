@@ -1,0 +1,2 @@
+FLASK_APP=gender_recognition.py
+FLASK_DEBUG=True
