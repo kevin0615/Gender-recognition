@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+node_modules/
+downloads/
+app/__pycache__
+app/modules/__pycache__
